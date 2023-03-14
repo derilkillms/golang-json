@@ -9,6 +9,7 @@ import (
 type Customer struct {
 	Firstname, Lastname string
 	Age                 int
+	Hobbies             []string
 }
 
 func TestJSONOBject(t *testing.T) {
