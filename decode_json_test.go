@@ -7,17 +7,16 @@ import (
 )
 
 func TestDecodeJSON(t *testing.T) {
-	jsonString := `{"FirstName:"Muhammad","LastName":"Deril","Age":27}`
-	jsonBytes := []byte(jsonString)
-
-	customer := &Customer
-
-	err := json.Unmarshal(jsonBytes, customer)
+	var jsonString = `{"FirstName":"Muhammad", "LastName":"Deril", "Age":27}`
+	var jsonData = []byte(jsonString)
+	var data Customer
+	var err = json.Unmarshal(jsonData, &data)
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(customer)
-	fmt.Println(customer.FirstName)
-	fmt.Println(customer.LastName)
-	fmt.Println(customer.Age)
+	fmt.Println(data)
+	fmt.Println(data.Firstname)
+	fmt.Println(data.Lastname)
+	fmt.Println(data.Age)
+
 }
