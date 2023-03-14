@@ -72,4 +72,10 @@ func TestJSONArrayComplexDecode(t *testing.T) {
 	fmt.Println(customer.Address)
 	fmt.Println(customer.Address[0])
 	fmt.Println(customer.Address[0].Country)
+
+	for _, v := range customer.Address {
+		fmt.Println(v.Country)
+		fmt.Println(v.Street)
+		fmt.Println(v.PostalCode)
+	}
 }
