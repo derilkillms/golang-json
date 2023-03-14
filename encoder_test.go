@@ -14,6 +14,8 @@ func TestEncoder(t *testing.T) {
 		Firstname: "Muhammad",
 		Lastname:  "Deril",
 		Age:       27,
+		Hobbies:   []string{},
+		Address:   []Address{},
 	}
 	err = encoder.Encode(customer)
 	if err != nil {
