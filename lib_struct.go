@@ -10,3 +10,9 @@ type Customer struct {
 	Hobbies             []string
 	Address             []Address
 }
+
+type Product struct {
+	Id       string `json:"id,omitempty"`
+	Name     string `json:"name,omitempty"`
+	ImageURL string `json:"image_url,omitempty"`
+}
