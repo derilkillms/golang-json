@@ -1,0 +1,17 @@
+{
+    "FirstName":"Muhammad",
+    "LastName":"Deril",
+    "Hobbies":null,
+    "Address":[
+        {
+            "Street":"Jalan Sesama",
+            "Country":"Indonesia",
+            "PostalCode":"9999"
+        },
+        {
+            "Street":"Jalan Yang Lurus",
+            "Country":"Indonesia",
+            "PostalCode":"72777777"
+        }
+    ]
+}
