@@ -6,12 +6,6 @@ import (
 	"testing"
 )
 
-type Customer struct {
-	Firstname, Lastname string
-	Age                 int
-	Hobbies             []string
-}
-
 func TestJSONOBject(t *testing.T) {
 	customer := Customer{
 		Firstname: "Muhammad",
